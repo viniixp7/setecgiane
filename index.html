@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DEAD CITY — ZOMBIE SURVIVAL</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="game"></canvas>
+<div id="hud" class="hide">
+ <div id="stats"><div>❤️ VIDA: <b id="hp"></b></div><div>🍖 FOME: <b id="hu"></b></div><div>💧 SEDE: <b id="th"></b></div><div>⚡ STAMINA: <b id="st"></b></div><div>☣ INFECÇÃO: <b id="inf"></b></div><div>🎒 PESO: <b id="wt"></b></div></div>
+ <div id="wep"></div><div id="clock"></div><div id="obj"></div><div id="cross">+</div>
+ <div id="prompt"></div><div id="msg"></div><div id="rl" class="hide">RECARREGANDO...</div><div id="vig"></div>
+ <canvas id="mini" width="150" height="150"></canvas>
+</div>
+<div id="menu" class="panel"><h1>DEAD CITY</h1><h2>ZOMBIE SURVIVAL</h2>
+ <button id="bPlay">JOGAR</button><button id="bCont">CONTINUAR</button><button id="bCtrl">CONTROLES</button>
+ <pre id="ctrl" class="hide">WASD — Movimento     SHIFT — Correr
+ESPAÇO — Pular       MOUSE — Câmera
+E — Interagir        F / Clique — Atacar
+R — Recarregar       I — Inventário
+L — Lanterna         B — Barricada (4 madeira + 8 pregos)
+1-5 — Trocar arma    ESC — Menu</pre></div>
+<div id="pause" class="panel hide"><h1>PAUSADO</h1><button id="bResume">CONTINUAR</button><button id="bSave">SALVAR</button><button id="bQuit">MENU PRINCIPAL</button></div>
+<div id="inv" class="panel hide"><h2>INVENTÁRIO</h2><div class="cols"><div><h3>MOCHILA</h3><div id="invL"></div></div><div id="stashC"><h3>ARMAZENAMENTO</h3><div id="stashL"></div></div></div><p>I / ESC para fechar. Clique = usar/equipar. ⇄ = guardar/pegar (perto do baú).</p></div>
+<div id="death" class="panel hide"><h1 id="endT">VOCÊ MORREU</h1><pre id="endS"></pre><button id="bRetry">TENTAR NOVAMENTE</button><button id="bMenu2">MENU PRINCIPAL</button></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script></body></html>
